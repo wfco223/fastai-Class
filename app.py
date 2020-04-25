@@ -16,7 +16,7 @@ def show_result():
 		learn = load_learner(path)
 		import requests
 		f = open('00000001.jpg','wb')
-		link = input()
+		link = url
 		f.write(requests.get(link).content)
 		prediction = learn.predict(open_image(Path(os.getcwd())/'00000001.jpg'))
 		f.close()
