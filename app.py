@@ -22,4 +22,3 @@ def show_result():
 		f.close()
 		return(render_template('show_result.html', url = url, path = path, prediction = prediction))
    
-app.run(host = '0.0.0.0', port = 5000)   
